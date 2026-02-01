@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-kehitys & Ratkaisut | Ammattimaiset Kotisivut</title>
+    <meta name="description"
+        content="Ammattimaista web-kehitystä pienille ja keskisuurille yrityksille. Laske hinta-arvio ja pyydä tarjous.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">WebDev<span>Studio</span></div>
+            <ul class="nav-links">
+                <li><a href="#services" data-i18n="nav-services">Palvelut</a></li>
+                <li><a href="#portfolio" data-i18n="nav-portfolio">Portfolio</a></li>
+                <li><a href="#calculator" data-i18n="nav-calculator">Hintalaskuri</a></li>
+                <li><a href="#contact" data-i18n="nav-contact">Ota yhteyttä</a></li>
+            </ul>
+            <div class="lang-toggle">
+                <button id="toggle-fi" class="active">FI</button>
+                <button id="toggle-en">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero container">
+            <h1 data-i18n="hero-title">Ota etumatka paremmilla kotisivuilla.</h1>
+            <p data-i18n="hero-subtitle">Modernit, nopeat ja näyttävät verkkosivut yrityksesi tarpeisiin.</p>
+            <div class="hero-btns">
+                <a href="#calculator" class="btn btn-primary" data-i18n="hero-cta">Laske hinta</a>
+                <a href="#portfolio" class="btn btn-secondary" data-i18n="hero-portfolio-cta">Katso työmme</a>
+            </div>
+        </section>
+
+        <section id="services" class="container">
+            <h2 data-i18n="services-title" style="text-align: center; margin-bottom: 3rem;">Palvelumme</h2>
+            <div class="services-grid">
+                <div class="service-card card">
+                    <h3 data-i18n="service-web-title">Web-suunnittelu</h3>
+                    <p data-i18n="service-web-desc">Modernit ja responsiiviset sivustot, jotka on optimoitu myyntiin ja
+                        näkyvyyteen.</p>
+                </div>
+                <div class="service-card card">
+                    <h3 data-i18n="service-dev-title">Kehitys</h3>
+                    <p data-i18n="service-dev-desc">Puhdasta koodia, nopeita latausaikoja ja saumatonta toimivuutta
+                        kaikilla laitteilla.</p>
+                </div>
+                <div class="service-card card">
+                    <h3 data-i18n="service-seo-title">SEO & Ylläpito</h3>
+                    <p data-i18n="service-seo-desc">Hakukoneoptimointi ja jatkuva tuki sivustosi menestyksen
+                        varmistamiseksi.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="container">
+            <h2 data-i18n="portfolio-title">Portfolio</h2>
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Portfolio items will be generated -->
+            </div>
+        </section>
+
+        <section id="calculator" class="calculator-section">
+            <div class="container calculator-layout">
+                <div class="calculator-controls">
+                    <h2 data-i18n="calc-title">Hintalaskuri</h2>
+
+                    <div class="calc-group">
+                        <label data-i18n="calc-type">Sivuston tyyppi</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="site-type" value="onepager" checked> <span
+                                    data-i18n="type-onepager">Onepager</span></label>
+                            <label><input type="radio" name="site-type" value="small"> <span data-i18n="type-small">1-3
+                                    sivua</span></label>
+                            <label><input type="radio" name="site-type" value="medium"> <span
+                                    data-i18n="type-medium">4-6 sivua</span></label>
+                            <label><input type="radio" name="site-type" value="large"> <span data-i18n="type-large">7-10
+                                    sivua</span></label>
+                        </div>
+                    </div>
+
+                    <div class="calc-group">
+                        <label data-i18n="calc-features">Ominaisuudet</label>
+                        <div class="toggle-group">
+                            <label class="switch-container">
+                                <span data-i18n="feat-shop">Verkkokauppa</span>
+                                <input type="checkbox" id="feat-shop">
+                                <span class="slider"></span>
+                            </label>
+                            <label class="switch-container">
+                                <span data-i18n="feat-blog">Blogi</span>
+                                <input type="checkbox" id="feat-blog">
+                                <span class="slider"></span>
+                            </label>
+                            <label class="switch-container">
+                                <span data-i18n="feat-analytics">Google Analytics</span>
+                                <input type="checkbox" id="feat-analytics">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="calc-group">
+                        <label data-i18n="calc-content">Sisällön tuotanto (h)</label>
+                        <input type="range" id="content-hours" min="0" max="20" value="0">
+                        <span id="hours-display">0 h</span>
+                    </div>
+
+                    <div class="calc-summary card">
+                        <h3 data-i18n="calc-total-title">Yhteenveto</h3>
+                        <div class="summary-row">
+                            <span data-i18n="summary-base">Perushinta</span>
+                            <span id="price-base">0 €</span>
+                        </div>
+                        <div class="summary-row">
+                            <span data-i18n="summary-features">Lisäominaisuudet</span>
+                            <span id="price-features">0 €</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span data-i18n="summary-total">Arvioitu hinta</span>
+                            <span id="price-total">0 €</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h2 data-i18n="contact-title">Pyydä tarjous</h2>
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <input type="text" name="name" placeholder="Nimi" required
+                                data-i18n-placeholder="placeholder-name">
+                            <input type="email" name="email" placeholder="Sähköposti" required
+                                data-i18n-placeholder="placeholder-email">
+                        </div>
+                        <input type="tel" name="phone" placeholder="Puhelin" data-i18n-placeholder="placeholder-phone">
+                        <textarea name="message" placeholder="Lisätietoja"
+                            data-i18n-placeholder="placeholder-message"></textarea>
+                        <button type="submit" class="btn btn-primary full-width" data-i18n="btn-submit">Pyydä maksuton
+                            arvio</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 WebDev Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
