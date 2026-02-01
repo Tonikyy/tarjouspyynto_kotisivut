@@ -93,19 +93,19 @@ const CONFIG = {
         {
             fi: { title: "Projekti Alfa", desc: "Moderni yrityssivusto" },
             en: { title: "Project Alpha", desc: "Modern corporate site" },
-            image: "C:/Users/tonih/.gemini/antigravity/brain/8172cf7b-e15f-49ea-bdb9-403756d22b4c/project_placeholder_1_1769946358824.png",
+            image: "assets/project1.png",
             link: "#"
         },
         {
             fi: { title: "EcoKauppa", desc: "Uniikki verkkokauppa" },
             en: { title: "EcoStore", desc: "Boutique e-commerce" },
-            image: "C:/Users/tonih/.gemini/antigravity/brain/8172cf7b-e15f-49ea-bdb9-403756d22b4c/project_placeholder_2_1769946374624.png",
+            image: "assets/project2.png",
             link: "#"
         },
         {
             fi: { title: "TechBlogi", desc: "Dynaaminen julkaisualusta" },
             en: { title: "TechBlog", desc: "Dynamic publishing platform" },
-            image: "C:/Users/tonih/.gemini/antigravity/brain/8172cf7b-e15f-49ea-bdb9-403756d22b4c/project_placeholder_3_1769946388033.png",
+            image: "assets/project3.png",
             link: "#"
         }
     ]
