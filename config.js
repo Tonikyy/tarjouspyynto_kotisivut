@@ -1,9 +1,9 @@
 const CONFIG = {
     prices: {
-        onepager: 500,
-        small: 1200,
-        medium: 2500,
-        large: 4000,
+        onepager: 300,
+        small: 600,
+        medium: 900,
+        large: 2500,
         ecommerce: 800,
         blog: 300,
         analytics: 150,
