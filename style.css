@@ -1,20 +1,20 @@
 :root {
-    /* Color Palette - Professional Dark Mode */
-    --bg-main: #0a0a0a;
-    --bg-card: #141414;
-    --bg-header: rgba(10, 10, 10, 0.85);
+    /* Color Palette - Portfolio Aligned Dark Mode */
+    --bg-main: #0d1117;
+    --bg-card: #161b22;
+    --bg-header: rgba(13, 17, 23, 0.85);
 
-    --text-primary: #ffffff;
-    --text-secondary: #a0a0a0;
-    --accent: #00ffcc;
-    /* Teal accent */
-    --accent-glow: rgba(0, 255, 204, 0.3);
+    --text-primary: #f0f6fc;
+    --text-secondary: #8b949e;
+    --accent: #a371f7;
+    /* Purple accent */
+    --accent-glow: rgba(163, 113, 247, 0.3);
 
-    --border: #2a2a2a;
-    --btn-primary: #00ffcc;
-    --btn-primary-text: #000000;
+    --border: #30363d;
+    --btn-primary: #a371f7;
+    --btn-primary-text: #ffffff;
     --btn-secondary: transparent;
-    --btn-secondary-border: #ffffff;
+    --btn-secondary-border: #30363d;
 
     --container-width: 1200px;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -136,7 +136,7 @@ nav {
 /* Calculator Section */
 .calculator-section {
     padding: 100px 0;
-    background: linear-gradient(180deg, var(--bg-main) 0%, #111 100%);
+    background: linear-gradient(180deg, var(--bg-main) 0%, #0a0c10 100%);
 }
 
 .calculator-layout {
@@ -192,7 +192,9 @@ nav {
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--bg-card);
+    border-color: var(--text-primary);
+    color: var(--text-primary);
 }
 
 .full-width {
@@ -267,7 +269,7 @@ input[type="range"] {
 .portfolio-card:hover {
     transform: translateY(-10px);
     border-color: var(--accent);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 40px rgba(163, 113, 247, 0.2);
 }
 
 .portfolio-card img {
